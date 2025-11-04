@@ -1,7 +1,7 @@
 import Link from 'next/link';
 import { IconLinkedIn, IconGitHub, IconEmail } from './icons/SocialIcons';
 
-export function Footer() {
+export default function Footer() {
   const enlacesNavegacion = [
     { href: "/#sobre-mi", label: "Sobre mí", descripcion: "Conóceme mejor" },
     { href: "/#portafolio", label: "Portafolio", descripcion: "Mis proyectos" },
