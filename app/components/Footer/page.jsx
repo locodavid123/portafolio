@@ -1,38 +1,8 @@
 import Link from 'next/link';
-import { IconLinkedIn, IconGitHub, IconEmail } from './icons/SocialIcons';
+import { navigationLinks, socialLinks } from '@/app/data';
+import { IconLinkedIn, IconGitHub, IconEmail } from './icons/SocialIcons'; // Mantén o mueve los iconos
 
 export default function Footer() {
-  const enlacesNavegacion = [
-    { href: "/#sobre-mi", label: "Sobre mí", descripcion: "Conóceme mejor" },
-    { href: "/#portafolio", label: "Portafolio", descripcion: "Mis proyectos" },
-    { href: "/servicios", label: "Servicios", descripcion: "¿Qué puedo hacer por ti?" },
-    { href: "/#blog", label: "Blog", descripcion: "Artículos y recursos" }
-  ];
-
-  const redesSociales = [
-    {
-      href: "https://www.linkedin.com/in/juan-avila-a36006375/",
-      label: "LinkedIn",
-      descripcion: "Perfil profesional",
-      icon: IconLinkedIn,
-      hoverColor: "hover:text-blue-400"
-    },
-    {
-      href: "https://github.com/locodavid123",
-      label: "GitHub",
-      descripcion: "Proyectos y código",
-      icon: IconGitHub,
-      hoverColor: "hover:text-gray-900"
-    },
-    {
-      href: "mailto:juannausan123@gmail.com",
-      label: "Correo",
-      descripcion: "Contáctame directamente",
-      icon: IconEmail,
-      hoverColor: "hover:text-blue-600"
-    }
-  ];
-
   return (
     <footer className="relative bg-white/80 backdrop-blur-md border-t border-gray-200">
       <div className="container mx-auto px-6 py-12">
@@ -46,7 +16,7 @@ export default function Footer() {
               Desarrollador de Software apasionado por crear soluciones digitales eficientes y elegantes.
             </p>
             <div className="mt-6 flex justify-center lg:justify-start space-x-4">
-              {redesSociales.map((social) => (
+              {socialLinks.map((social) => (
                 <Link
                   key={social.href}
                   href={social.href}
@@ -68,7 +38,7 @@ export default function Footer() {
           <div className="lg:col-span-2 grid grid-cols-2 gap-8">
             <div>
               <ul className="space-y-3">
-                {enlacesNavegacion.slice(0, 2).map((link) => (
+                {navigationLinks.slice(0, 2).map((link) => (
                   <li key={link.href}>
                     <Link 
                       href={link.href} 
@@ -86,7 +56,7 @@ export default function Footer() {
             </div>
             <div>
               <ul className="space-y-3">
-                {enlacesNavegacion.slice(2).map((link) => (
+                {navigationLinks.slice(2).map((link) => (
                   <li key={link.href}>
                     <Link 
                       href={link.href} 
