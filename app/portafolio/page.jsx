@@ -1,4 +1,4 @@
-import {Headers} from '../components/Headers/page.jsx';
+import Headers from '../components/Headers/page.jsx';
 import Footer from '../components/Footer/page.jsx';
 import Image from 'next/image';
 

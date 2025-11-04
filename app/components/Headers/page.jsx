@@ -2,7 +2,7 @@
 import Link from 'next/link';
 import { useState } from 'react';
 
-export function Headers() {
+export default function Headers() {
   const [isOpen, setIsOpen] = useState(false);
 
   const navLinks = [
