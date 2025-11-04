@@ -1,5 +1,5 @@
 import {Headers} from '../components/Headers/page.jsx';
-import {Footer} from '../components/Footer/page.jsx';
+import Footer from '../components/Footer/page.jsx';
 import Image from 'next/image';
 
 // Componente reutilizable para las tarjetas de proyecto

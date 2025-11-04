@@ -1,5 +1,5 @@
 import { Headers } from '../components/Headers/page.jsx';
-import { Footer } from '../components/Footer/page.jsx';
+import Footer from '../components/Footer/page.jsx';
 import Link from 'next/link';
 
 // Icons for contact info
