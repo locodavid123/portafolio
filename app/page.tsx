@@ -1,6 +1,6 @@
 import Image from "next/image";
 import { Headers } from "./components/Headers/page";
-import { Footer } from "./components/Footer/page";
+import Footer from './components/Footer/page.jsx';
 import Body from "./components/Body/page";
 
 export default function Home() {
